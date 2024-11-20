@@ -120,12 +120,17 @@ In the `main.js` module, invoke the `PotteryList` component function. Take its r
 > 🧨 Before you click the "Assessment Complete" button on the Learning Platform, add your answers below for each question and make a commit. It is your option to request a face-to-face meeting with a coach for a vocabulary review.
 
 1. Explain how you got the HTML, with the correct data, displayed in the browser?
-   > Your answer here
+
+   > In main I call toSellOrNotToSell function and pass all five of my pottery objects into my toSellOrNotToSell function. toSellOrNotToSell is then being executed in my potterycatalog module. There I push each pottery object thats not cracked into an array to make the objects itterable. I then return that array of objects in a function called usePottery and call that function in main. Moving into my potterylist module, I have a function called potteryList which has a for loop in it. Inside the for loop we are iterating through our array usePottery. I then use a string literal to store all of my html data and object properties. Moving back to main, I am targeting the DOM. We use the method query selector to target our html class and change the inner html. We set the new inner html equal to our callback function potteryList and we pass through our usePotter array.
+
 2. In the **PotteryList** module, when you iterate your pottery, you need to show the evidence of what the **weight** property's value is for the 2nd piece of pottery. Use [Loom](https://www.loom.com/) to record your browser window with the developer tools open and show those values.
-   > Paste your video's public URL here
+   > https://www.loom.com/share/219c895a0049451c823b6b5fcdf9645e?sid=ae78418e-ad65-46a8-ae1e-d4e08c38e73e
+
 3. The **PotteryWheel** module has a single function named `makePottery`. Why doesn't that module have all of the other code in it?
-   > Your answer here
+   > Functions are designed to only do one thing and have one output. Storing all of your code or multiple different things in a function would make no sense because you would never be able to execute a function and get multiple outputs. you can have multiple return statement in your function but you can only ever get one output. In addition, having a different function for each task makes your code more readable. It will also make debugging your code much simpler because you are able to pinpoint an issue to a specfic function. With no function you will have to scroll through pages of code to see where each task is coded. You can also reuse functions. If you wanted to use the same task on another page you can just call your function. With no function you would have to rewrite code which makes reading and debugging more confusing.
+
 4. The pottery shop has learned that there is a set of customers that are willing to buy cracked pottery at a discounted price of $2.50. That means that the cracked pottery should now be displayed in the catalog. Explain the changes that this new business strategy would cause to your algorithm.
-   > Your answer here
+   > This will not change the algorithm because this is not a new task. Since an algorithm is considered high-level, its meant to describe the overall goal/task of the function. Its mean to describe the steps and not get into detail. As far as the code goes we will just add an else statement to our potterycatalog module that will add a new key to our object called price and set the value to 2.50. Then we will push the object to our array forSale.
+
 5. In the **Kiln** module, you have a `firePottery()` function. You need to demonstrate how to use the debugger to verify the values of the parameters for that function when your code runs. Use [Loom](https://www.loom.com/) to record your browser window with the developer tools open and show those values.
-   > Paste your video's public URL here
+   > https://www.loom.com/share/65448e3ec1e84c87ba864b5c7cae267b?sid=99c5a48c-28f5-4d8a-b72f-0c107c4a67cd
